@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kraken - SAMP SERVER</title>
+
+	<!-- Custom Style -->
+	<link rel="stylesheet" href="../style.css"> <!-- Custom CSS -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../css/animate.css"> <!-- Animate CSS -->
+    <link rel="stylesheet" href="../fontawesome/css/all.css"> <!-- Fontawesome -->
+
+</head>
+<body>
+
+
+
+<!-- Navbar -->
+<div class="my-navbar">
+	<div class="container">
+		<nav id="navbar-example" class="navbar navbar-expand-lg menu">
+		    <div class="navbar-brand"><a class="text-uppercase" href="index.html">Kraken</a></div>
+		    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button> -->
+			
+			<button class="navbar-toggler" data-target="#navbarNavAltMarkup" data-toggle="collapse" aria-expanded="true">
+		        <span class="line"></span> 
+		        <span class="line"></span> 
+		        <span class="line" style="margin-bottom: 0;"></span>
+			</button>
+
+		    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav ml-auto">
+				<a class="nav-link" href="../">Home</a>
+				<a class="nav-link" href="../index.html#about">About</a>
+				<a class="nav-link" href="../index.html#contact">Contact</a>
+				<a class="nav-link" href="../blog">Blog</a>
+				<a class="nav-link" href="../forum">Forum</a>
+			</div>
+			<div class="navbar-nav ml-auto">
+				<a id="special-link" class="nav-link" href="">Register</a>
+				<button type="button" class="btn-login" data-toggle="modal" data-target="#myModal">
+					Login
+				  </button>
+			</div>
+		  </div>
+		</nav>
+	</div>
+</div>
+
+
+
+  
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+		<!-- Modal Header -->
+		<div class="modal-header">
+			<h4 class="modal-title">Login</h4>
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+		</div>
+
+		<!-- Modal body -->
+		<div class="modal-body">
+			<h4 class="mb-4">Masuk</h4>
+			<form>
+				<div class="form-group">
+					<label for="exampleInputEmail1">Masukkan Email atau Username</label>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Kata Sandi</label>
+					<input type="password" class="form-control" id="exampleInputPassword1">
+					<small id="emailHelp" class="form-text text-muted">Jangan memberitahu kata sandi anda kepada orang lain.</small>
+				</div>
+				<button type="submit" class="btn btn-warning">Masuk</button>
+			</form>
+		</div>
+
+		<!-- Modal footer -->
+		<div class="modal-footer">
+			<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+		</div>
+
+		</div>
+	</div>
+</div>
+<!-- End Navbar -->
+
+
+<!-- Jumbotron -->
+<div class="jumbotron-account jumbotron-fluid text-center">
+	<div class="container">
+		<h1 class="text-uppercase font-weight-bold user-select-none">Account</h1>
+	</div>
+	<div id="particles-js"></div>
+</div>
+<!-- End Jumbotron -->
+
+
+<!-- Sign In & Up -->
+
+<div class="account">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 text-center">
+				<h3 class="wow animate__animated animate__zoomIn">Akun Anda</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 buatakun">
+				<h4 class="mb-4">Buat Akun Baru</h4>
+				<form>
+					<div class="form-row">
+					  <div class="form-group col-md-6">
+						<label for="inputEmail4">Alamat Email</label>
+						<input type="email" class="form-control" id="inputEmail4" required>
+					  </div>
+					  <div class="form-group col-md-6">
+						<label for="inputPassword4">Kata Sandi</label>
+						<input type="password" class="form-control" id="inputPassword4" required>
+					  </div>
+					</div>
+					<div class="form-group">
+						<label for="inputUsername">Username</label>
+						<input type="text" class="form-control" id="inputUsername" required>
+					  </div>
+					<div class="form-group">
+					  <label for="inputDiscord">Discord</label>
+					  <input type="text" class="form-control" id="inputDiscord" placeholder="contoh : udinGendut#5444">
+					  <small id="emailHelp" class="form-text text-muted">Tidak wajib diisi.</small>
+					</div>
+					<div class="form-group">
+					  <label for="inputTelp">No. Telepon</label>
+					  <input type="text" class="form-control" id="inputTelp" placeholder="08xxxxxxxxxx">
+					  <small id="emailHelp" class="form-text text-muted">Tidak wajib diisi.</small>
+					</div>
+					<div class="form-group">
+					<label for="inputState">Asal Daerah</label>
+					<select id="inputState" class="form-control" required>
+						<option selected>Pilih...</option>
+						<option>...</option>
+					</select>
+					</div>
+					<div class="form-group">
+					  <div class="form-check">
+						<input class="form-check-input" type="checkbox" id="gridCheck">
+						<label class="form-check-label" for="gridCheck">
+						  Saya setuju dengan Peraturan & Ketentuan yang berlaku.
+						</label>
+					  </div>
+					</div>
+					<button type="submit" class="btn btn-warning">Daftar</button>
+				  </form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- End Sign In & Up -->
+
+
+
+<!-- Contact Us -->
+<div id="contact">
+	<div class="contact-us">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+					<h3 class="wow animate__animated animate__zoomIn">Join Komunitas Kami</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 kontak text-center">
+					<h4>Sosial Media</h4>
+					<div class="social-div"><div class="social"><i class="fab fa-facebook-f"></i></div><a href="">Kraken Community</a></div>
+					<div class="social-div"><div class="social"><i class="fab fa-twitter"></i></div><a href="">@kraken_community</a></div>
+					<div class="social-div"><div class="social"><i class="fab fa-whatsapp"></i></div><a href="">+62 895 0000 000</a></div>
+					<div class="social-div"><div class="social"><i class="fab fa-discord"></i></div><a href="">discord.gg/krakencommunity</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End Contact Us -->
+
+
+
+
+<!-- Footer -->
+<footer>
+	<div class="nav-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 nav-left">
+					<h4>Navigation</h4>
+					<p><a href="">Registrasi</a></p>
+					<p><a href="../blog/download">Download</a></p>
+					<p><a href="../blog/kamus-roleplay">Kamus Roleplay</a></p>
+
+					<h4>Social Media</h4>
+					<p><a href="">Facebook</a></p>
+					<p><a href="">Twitter</a></p>
+					<p><a href="">Whatsapp</a></p>
+					<p><a href="">Discord</a></p>
+				</div>
+				<div class="col-md-4">
+					<h4>Donasi</h4>
+					<p><a href="">Paypal</a></p>
+					<p><a href="">Dana</a></p>
+					<p><a href="">Gopay</a></p>
+					<p><a href="">BCA</a></p>
+					<p><small>Info lebih lengkap bisa <a href="../blog/donate">klik disini</a></small></p>
+
+					<h4>Saran & Kritik</h4>
+					<p>Customer Service</p>
+					<p><a href="">Discord</a></p>
+				</div>
+
+				<div class="col-md-4">
+					<h4>Tentang Kami</h4>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore praesentium rem temporibus deserunt consectetur earum voluptates magni numquam, qui laboriosam repudiandae mollitia voluptate odit adipisci eos modi iure ipsam distinctio.</p>
+
+					<h4>Kontak</h4>
+					<p>Telp : (021) 84 111 83</p>
+					<p>Email : contact@krakenroleplay.com</p>
+					<p>Customer Service : support@krakenroleplay.com</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="copy-footer">
+		<div class="copyright user-select-none"><p>Copyright &copy; 2020 - Kraken Server</p></div>
+		<div class="reserved user-select-none"><p>All Rights Reserved</p></div>
+	</div>
+</footer>
+<!-- End Footer -->
+
+
+
+
+
+
+<!-- Script JS -->
+<script src="../js/jquery-3.5.1.slim.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/wow.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/particles.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/script.js"></script>
+
+
+<!-- Navbar Scripts -->
+<script>
+  $(document).ready(function(){
+  	$(window).scroll(function(){
+  		if($(window).scrollTop() > 100 ){
+  			$('.my-navbar').addClass('navbar-scroll');
+  		} else{
+  			$('.my-navbar').removeClass('navbar-scroll');
+  		}
+  	});
+  });
+</script>
+<!-- End Navbar Scripts -->
+
+
+<!-- Wow.js Scripts -->
+<script>
+  var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null,    // optional scroll container selector, otherwise use window,
+    resetAnimation: true,     // reset animation on end (default is true)
+  }
+);
+wow.init();
+</script>
+<!-- End Wow.js Scripts -->
+
+
+<!-- End Script JS -->
+	
+</body>
+</html>
