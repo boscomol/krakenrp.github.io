@@ -2,7 +2,7 @@
 
 Author : Akbar Rivaldy
 
-Facebook : https://facebook.com/Aokji2506
+Facebook : https://facebook.com/aokji2506
 
 Discord : Laravel#5444
 
